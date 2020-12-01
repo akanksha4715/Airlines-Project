@@ -1,0 +1,263 @@
+drop database lufthansa;
+create database lufthansa;
+use lufthansa;
+create table airbus(
+ORIGIN varchar(30),
+DESTINATION varchar(30),
+DEPARTURE varchar(10),
+ARRIVAL varchar(10),
+AIRCRAFT varchar(10) primary key
+);
+
+Insert into airbus values
+
+('Abu Dhabi','Mumbai','1:35','5:50','A-300'),
+('Agartala','Kolkata','11:30','12:20','A-301'),
+('Agartala','Kolkata','19:40','20:30','A-302'),
+('Agatti','Bengaluru','11:55','15:05','ATR-70'),
+('Agatti','Kochi','11:55','13:10','ATR-71'),
+('Agra','Khajuraho','13:55','14:40','A-303'),
+('Ahmedabad','Chennai','6:50','9:10','A-304'),
+('Ahmedabad','Delhi','7:10','8:45','A-305'),
+('Ahmedabad','Delhi','18:50','20:25','A-306'),
+('Ahmedabad','Delhi','22:20','23:55','A-307'),
+('Ahmedabad','Kuwait','20:55','22:25','A-308'),
+('Ahmedabad','London','4:40','9:55','B001'),
+('Ahmedabad','London','4:55','10:15','B002'),
+('Ahmedabad','Miami','3:30','4:45','B016'),
+('Aizawl','Imphal','11:55','12:40','A-309'),
+('Aizawl','Kolkata','11:55','14:35','A-310'),
+('Allahabad','Delhi','15:10','16:50','ATR-72'),
+('Amritsar','Birmingham','10:30','18:00','B003'),
+('Amritsar','Delhi','14:45','15:50','B004'),
+('Amritsar','Delhi','19:00','20:10','A-311'),
+('Aurangabad','Delhi','17:40','19:30','A-312'),
+('Aurangabad','Mumbai','20:10','21:20','A-313'),
+('Bagdogra','Delhi','13:50','16:05','A-314'),
+('Bagdogra','Kolkata','15:45','16:45','A-315'),
+('Bahrain','Delhi','23:00','5:00','A-316'),
+('Bangkok','Delhi','8:55','12:00','B005'),
+('Bangkok','Mumbai','20:50','23:40','B006'),
+('Boston','Agatti','8:15','11:25','ATR-73'),
+('Bengaluru','Delhi','6:10','8:55','A-317'),
+('Bengaluru','Muscat','17:00','21:05','A-318'),
+('Bengaluru','Pune','8:10','11:15','A-319'),
+('Bengaluru','San Francisco','21:10','7:00','A-320'),
+('Houston','Thiruvananthapuram','7:10','8:20','A-321'),
+('Bengaluru','Vijayawada','17:35','18:55','ATR-74'),
+('Bengaluru','Visakhapatnam','17:35','20:25','ATR-75'),
+('Bhatinda','Delhi','12:35','14:10','ATR-76'),
+('Bhavnagar','Mumbai','19:00','20:15','ATR-77'),
+('Bhopal','Delhi','8:15','9:50','A-322'),
+('Bhopal','Delhi','8:15','9:50','A-323'),
+('Bhopal','Delhi','21:50','23:25','A-324'),
+('Bhopal','Hyderabad','9:45','13:25','ATR-78'),
+('Bhopal','Hyderabad','11:20','13:25','ATR-79'),
+('Bhopal','Jabalpur','9:45','10:50','ATR-80'),
+('Los angeles','Mumbai','8:00','9:20','A-325'),
+('Boston','Mumbai','21:50','23:25','A-326'),
+('Boston','Pune','9:30','14:00','ATR-81'),
+('Houston','Raipur','9:30','11:00','ATR-82'),
+('Bhubaneswar','Delhi','9:45','12:05','A-327'),
+('Bhubaneswar','Delhi','13:50','16:10','A-328'),
+('Miami','Delhi','21:25','23:35','A-329'),
+('Bhubaneswar','Delhi','21:25','23:35','A-330'),
+('Bhubaneswar','Hyderabad','10:55','12:25','A-331'),
+('Hong Kong','Delhi','18:05','21:20','B007'),
+('Hong Kong','Delhi','18:05','21:20','B008'),
+('Hong Kong','Mumbai','18:05','1:15','B009'),
+('Hong Kong','Mumbai','18:05','1:15','B010'),
+('Miami','Osaka','8:05','12:40','B011'),
+('Boston','Seoul','8:05','12:30','B012'),
+('Hubli','Bengaluru','17:35','18:55','ATR-83'),
+('Hyderabad','Bengaluru','3:30','4:50','A-332'),
+('Hyderabad','Bengaluru','6:30','7:35','A-333'),
+('Hyderabad','Bengaluru','16:50','7:55','A-334'),
+('Los angeles','Bhopal','7:10','9:25','ATR-84'),
+('Miami','Bhopal','7:00','10:50','ATR-85'),
+('Los angeles','Bhubaneswar','13:05','14:35','A-335'),
+('Imphal','Aizawl','13:10','13:55','A-336'),
+('Imphal','Delhi','14:05','18:05','A-337'),
+('Imphal','Guwahati','14:05','15:00','A-338'),
+('Miami','Kolkata','12:15','13:35','A-339'),
+('Imphal','Kolkata','13:10','15:40','A-340'),
+('Imphal','Kolkata','13:15','14:35','A-341'),
+('Imphal','Kolkata','14:55','16:15','A-342'),
+('Indore','Delhi','9:00','10:35','A-343'),
+('Indore','Delhi','12:50','15:30','ATR-86'),
+('Indore','Gwalior','12:50','14:00','ATR-87'),
+('Jaipur','Delhi','21:00','22:00','ATR-88'),
+('Jaipur','Mumbai','13:55','15:35','A-344'),
+('Jammu','Delhi','9:50','11:25','ATR-89'),
+('Jammu','Leh','9:25','10:20','A-345'),
+('Jammu','Srinagar','13:05','13:45','A-346'),
+('Jamnagar','Mumbai','12:50','13:55','A-347'),
+('Kathmandu','Kolkata','16:20','17:25','A-348'),
+('Kathmandu','Kolkata','16:20','17:25','A-349'),
+('Khajuraho','Delhi','15:15','18:25','A-350'),
+('Khajuraho','Varanasi','15:15','16:10','A-351'),
+('Kochi','Agatti','10:05','11:25','ATR-90'),
+('Kolkata','Bengaluru','20:45','23:20','A-352'),
+('Kolkata','Bhubaneswar','9:05','10:20','A-353'),
+('Kolkata','Chennai','14:45','17:05','A-354'),
+('Kolkata','Delhi','7:00','9:10','A-355'),
+('Kuwait','Goa','0:05','6:35','A-356'),
+('Kuwait','Hyderabad','0:05','7:00','A-357'),
+('Leh','Chandigarh','8:05','8:45','A-358'),
+('Leh','Srinagar','8:10','8:50','A-359'),
+('Lilabari','Guwahati','9:05','10:05','ATR-91'),
+('Lilabari','Kolkata','9:05','12:00','ATR-92'),
+('London','Ahmedabad','12:30','2:00','B013'),
+('London','Ahmedabad','12:35','2:00','B014'),
+('London','Delhi','9:45','22:50','B015'),
+('London','Newark','12:30','15:00','B017');
+
+
+
+
+create table fare(
+f_code varchar(10),
+foreign key(f_code) references Airbus(aircraft),
+Business_class integer,
+Eco_class integer
+);
+
+insert into fare values('A-300',50000,40000);
+insert into fare values('A-302',12000,8000);
+insert into fare values('A-302',12000,8000);
+insert into fare values('ATR-70',13000,9000);
+insert into fare values('ATR-71',14000,9000);
+insert into fare values('A-303',14000,9000);
+insert into fare values('A-304',10000,5000);
+insert into fare values('A-305',12000,4500);
+insert into fare values('A-306',13400,5000);
+insert into fare values('A-307',12000,4500);
+insert into fare values('A-308',15000,3800);
+insert into fare values('B001',50000,39500);
+insert into fare values('B002',50000,39500);
+insert into fare values('B016',50000,34400);
+insert into fare values('A-309',12500,3900);
+insert into fare values('A-310',14000,5000);
+insert into fare values('ATR-72',16000,5000);
+insert into fare values('B003',40000,34000);
+insert into fare values('B004',15000,3600);
+insert into fare values('A-311',13500,5000);
+insert into fare values('A-312',14000,4000);
+insert into fare values('A-313',15000,5000);
+insert into fare values('A-316',14900,5000);
+insert into fare values('B005',71000,50000);
+insert into fare values('B006',81000,59000);
+insert into fare values('ATR-73',95000,75000);
+insert into fare values('A-317',13000,4000);
+insert into fare values('A-318',34000,28000);
+insert into fare values('A-319',14400,5200);
+insert into fare values('A-320',85000,64000);
+insert into fare values('A-321',92000,80000);
+insert into fare values('ATR-74',12000,8000);
+insert into fare values('ATR-75',13000,9000);
+insert into fare values('ATR-76',14000,9000);
+insert into fare values('ATR-77',14000,9000);
+insert into fare values('A-322',10000,5000);
+insert into fare values('A-323',12000,4500);
+insert into fare values('A-324',13400,5000);
+insert into fare values('ATR-78',12000,4500);
+insert into fare values('ATR-79',15000,3800);
+insert into fare values('ATR-80',12000,7000);
+insert into fare values('A-325',95000,80000);
+insert into fare values('A-326',95000,85000);
+insert into fare values('ATR-81',77500,50000);
+insert into fare values('ATR-82',80000,65000);
+insert into fare values('A-327',16000,5000);
+insert into fare values('A-328',24000,14000);
+insert into fare values('A-329',95000,88000);
+insert into fare values('A-330',13500,5000);
+insert into fare values('A-331',14000,4000);
+insert into fare values('B007',85000,55000);
+insert into fare values('B008',85000,55000);
+insert into fare values('B009',90000,50000);
+insert into fare values('B010',91000,56000);
+insert into fare values('B011',75000,55000);
+insert into fare values('B012',73000,54000);
+insert into fare values('ATR-83',54000,38000);
+insert into fare values('A-332',14400,5200);
+insert into fare values('A-333',15000,4440);
+insert into fare values('A-334',12000,8000);
+insert into fare values('ATR-84',92000,68000);
+insert into fare values('ATR-85',89300,69000);
+insert into fare values('A-335',94000,69000);
+insert into fare values('A-336',14000,9000);
+insert into fare values('A-337',10000,5000);
+insert into fare values('A-338',12000,4500);
+insert into fare values('A-339',93400,75000);
+insert into fare values('A-340',12000,4500);
+insert into fare values('A-341',15000,3800);
+insert into fare values('A-342',15000,3900);
+insert into fare values('A-343',15000,3900);
+insert into fare values('ATR-86',15000,8400);
+insert into fare values('ATR-87',12500,3900);
+insert into fare values('ATR-88',14000,5000);
+insert into fare values('A-344',12000,5000);
+insert into fare values('ATR-89',14000,5400);
+insert into fare values('A-345',15000,7600);
+insert into fare values('A-346',6500,3000);
+insert into fare values('A-347',9000,4000);
+insert into fare values('A-348',15000,5000);
+insert into fare values('A-349',14900,5000);
+insert into fare values('A-350',17000,4500);
+insert into fare values('A-351',16000,5000);
+insert into fare values('ATR-90',9000,4000);
+insert into fare values('A-352',13000,4000);
+insert into fare values('A-353',16000,7000);
+insert into fare values('A-354',16400,5200);
+insert into fare values('A-355',15500,5400);
+insert into fare values('A-356',82000,66000);
+insert into fare values('A-357',82000,68000);
+insert into fare values('A-358',23000,19000);
+insert into fare values('A-359',10000,5000);
+insert into fare values('ATR-91',12000,4500);
+insert into fare values('ATR-92',15000,4800);
+insert into fare values('B013',85000,50000);
+insert into fare values('B014',85000,50000);
+insert into fare values('B015',88000,64000);
+insert into fare values('B017',45000,30000);
+
+
+create table reservation(
+pnr int,
+date date,
+name varchar(30),
+age int,
+gender varchar(10)
+);
+
+drop table reservations;
+create table reservations(
+     pnr int,
+     name varchar(30),
+     age int,
+     gender varchar(30),
+     fcode varchar(10),
+     fare int,
+     source varchar(20),
+   destination varchar(20),
+   date varchar(30),
+class varchar(10)
+);
+
+insert into reservations values( 123,'Richa',16,'F','B015',2098,'London','Delhi','2017-09-18','economy');
+insert into reservations values( 124,'Akanksha',17,'F','A329',95000,'Miami','Delhi','2017-08-29','business');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
